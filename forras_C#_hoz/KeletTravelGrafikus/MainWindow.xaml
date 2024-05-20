@@ -1,0 +1,70 @@
+﻿<Window x:Class="KeletTravelGrafikus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeletTravelGrafikus"
+        mc:Ignorable="d"
+        Title="KeletTravel" Height="450" Width="800">
+
+    <TabControl>
+        <TabItem Header="Úticélok">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <ListBox x:Name="lbCelok" Grid.Column="0" SelectionChanged="lbCelok_SelectionChanged"/>
+
+                <StackPanel Grid.Column="1">
+                    <Label Content="Cél megnevezése"></Label>
+                    <Label Content="" x:Name="lblCelNev"></Label>
+                    <Label Content="Kultúrális események jellemző hónapja"></Label>
+                    <Label Content="" x:Name="lblCelHonap"></Label>
+                </StackPanel>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Kapcsolat felvétel">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Név:" Grid.Column="0"/>
+                    <TextBox x:Name="tbNev" Grid.Column="1"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Email:" Grid.Column="0"/>
+                    <TextBox x:Name="tbEmail" Grid.Column="1"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Telefon:" Grid.Column="0"/>
+                    <TextBox x:Name="tbTelefon" Grid.Column="1"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Megjegyzés:" Grid.Column="0"/>
+                    <TextBox x:Name="tbMegjegyzes" Grid.Column="1"/>
+                </Grid>
+
+                <Button x:Name="btnFelvetel" Content="Kapcsolatfelvétel" Height="25" Click="btnFelvetel_Click"/>
+
+            </StackPanel>
+
+        </TabItem>
+    </TabControl>
+
+</Window>

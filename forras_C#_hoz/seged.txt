@@ -1,0 +1,6 @@
+
+Példa 1.
+List<Celok> celokTomb = Backend.GET("http://localhost:3000/celok").Send().ToList<Celok>();
+
+Példa 2.
+Backend.POST("http://localhost:3000/felvitel").Body(kapcsolat).Send().Message

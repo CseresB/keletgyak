@@ -1,0 +1,48 @@
+
+.bg-primary {
+    background-color: #1abc9c;
+}
+
+
+.felirat {
+    font-size: 42px;
+    border: 1px solid white;
+    text-align: center;
+    padding: 10px
+}
+
+button{
+    margin-top: 5px;
+}
+.sajat{
+    font-family: 'Lucida Sans';
+}
+
+
+
+
+
+.alairas{
+    font-family: fantasy;
+    text-align: center;
+    margin-top: 10px;
+}
+.kephez{
+    font-family: 'Lucida Sans';
+    margin-left: 30px;
+}
+.lista{
+    border:1px solid green;
+    margin:10px;
+    padding:10px;
+}
+
+/* 49. feladat: mely 20px szöveg méretű, félkövér, felső margója 10px-es (stíluslapon). |
+    - stíluslapon, tehát külön css-ben megírva 
+    - css-ben id-t #-el hívunk meg */
+
+#siker{
+    font-size: 20px; /* - 20px szöveg méretű */
+    font-weight: bold; /* - félövér */
+    margin-top: 10px; /* - felső margója 10px-es */
+}
